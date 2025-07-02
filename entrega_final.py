@@ -63,6 +63,3 @@ while True:
         case _:
             # Por si se manda cualquiera
             print("Opción no válida. Intente nuevamente.")
-
-# Al final mostramos cómo quedó todo
-print("\nProductos finales guardados:", productos)
