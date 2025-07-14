@@ -28,9 +28,12 @@ while True:
         case "1":
             # Le pedimos el nombre del nuevo producto
             nuevo_producto = input("Ingrese el nombre del producto: ")
-            productos.append(nuevo_producto)  # Lo sumamos a la lista
-            print(f"Producto '{nuevo_producto}' agregado.")
-            escribir()  # Lo guardamos en el archivo
+            if nuevo_producto not productos:
+                productos.append(nuevo_producto)  # Lo sumamos a la lista
+                print(f"Producto '{nuevo_producto}' agregado.")
+                escribir()  # Lo guardamos en el archivo
+            else:
+                print("producto ya en stock")
 
         case "2":
             # Pedimos cuál quiere eliminar
